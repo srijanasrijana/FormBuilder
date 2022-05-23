@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Form Builder";
+}
+
+<div class="container">
+    <h2>Form Builder</h2>
+    <form action="/Form/GenerateForm" method="post" id="jsonForm">
+        <div class="form-group">
+            <label for="comment">JSON:</label>
+            <textarea class="form-control" rows="5" name="form" id="json"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate</button>
+    </form>
+</div>
+<br/>
+<div class="container">
+    <div id="htmlForm">
+
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/form.js"></script>
+
